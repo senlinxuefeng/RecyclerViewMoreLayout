@@ -1,0 +1,2 @@
+# RecyclerViewMoreLayout
+RecyclerView多种布局的使用，摒弃listview中嵌套girdview的方式
