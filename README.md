@@ -11,7 +11,8 @@ RecyclerView多种布局的使用，摒弃listview中嵌套girdview的方式<br>
                 return recyclerViewAdapterBoard.getItemViewType(position) == 0 ? 3 : recyclerViewAdapterBoard.getItemViewType(position) == 1 ? 1 : 3;
             }
         });
-        mRecyclerView.setLayoutManager(layoutManager);
+        mRecyclerView.setLayoutManager(layoutManager);<br>
+        
 此句代码是设置对应position位置的item的跨列数，比如第一行显示一列，其他行显示两列的代码实现如下：<br>
 layoutManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {  
             @Override  
