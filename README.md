@@ -1,8 +1,8 @@
 # RecyclerViewMoreLayout
-RecyclerView多种布局的使用，摒弃listview中嵌套girdview的方式
-##说明想要实现的效果是，0：单列，1：表示，三列，2：表示单列，
+RecyclerView多种布局的使用，摒弃listview中嵌套girdview的方式<br>
+##说明想要实现的效果是，0：单列，1：表示，三列，2：表示单列，<br>
 
-实现的关键代码如下：
+实现的关键代码如下：<br>
  RecyclerView mRecyclerView = (RecyclerView) findViewById(R.id.rv);
         GridLayoutManager layoutManager = new GridLayoutManager(this, 3);
         layoutManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
@@ -12,7 +12,7 @@ RecyclerView多种布局的使用，摒弃listview中嵌套girdview的方式
             }
         });
         mRecyclerView.setLayoutManager(layoutManager);
-此句代码是设置对应position位置的item的跨列数，比如第一行显示一列，其他行显示两列的代码实现如下：
+此句代码是设置对应position位置的item的跨列数，比如第一行显示一列，其他行显示两列的代码实现如下：<br>
 layoutManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {  
             @Override  
             public int getSpanSize(int position) {  
